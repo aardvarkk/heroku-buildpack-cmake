@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-tar -xzf <(curl -s https://cmake.org/files/v3.10/cmake-3.10.2-Linux-x86_64.tar.gz) -C $1
-$1/cmake-3.10.2-Linux-x86_64/bin/cmake .
+cd $1
+tar -xzf <(curl -s https://cmake.org/files/v3.10/cmake-3.10.2-Linux-x86_64.tar.gz)
+./cmake-3.10.2-Linux-x86_64/bin/cmake .
 make
 exit 1
