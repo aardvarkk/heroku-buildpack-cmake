@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-bash <(curl -s https://cmake.org/files/v3.10/cmake-3.10.2-Linux-x86_64.sh) --prefix=$1 --exclude-subdir --skip-license
-echo `ls -R $1`
+tar -xzf <(curl -s https://cmake.org/files/v3.10/cmake-3.10.2-Linux-x86_64.tar.gz) -C $1
+echo `ls -al $1`
 $1/bin/cmake .
 make
 exit 1
