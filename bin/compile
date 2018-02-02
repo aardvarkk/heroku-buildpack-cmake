@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-source <(curl -s https://cmake.org/files/v3.10/cmake-3.10.2-Linux-x86_64.sh)
+bash <(curl -s https://cmake.org/files/v3.10/cmake-3.10.2-Linux-x86_64.sh)
 exit 0
