@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # must have a CMakeLists.txt file
 if [ -f $1/CMakeLists.txt ]; then
